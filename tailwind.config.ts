@@ -24,7 +24,7 @@ const config: Config = {
     },
   },
   plugins: [
-    function({ addUtilities }) {
+    function({ addUtilities }: { addUtilities: (utilities: Record<string, Record<string, any>>) => void }) {
       const newUtilities = {
         '.scrollbar-hide': {
           /* Firefox */
