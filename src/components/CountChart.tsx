@@ -2,11 +2,9 @@
 
 import Image from "next/image";
 import React from "react";
-import {
-  RadialBarChart,
-  RadialBar,
-  ResponsiveContainer,
-} from "recharts";
+import { RadialBarChart, RadialBar, ResponsiveContainer } from "recharts";
+import { getImagePath } from "@/lib/utils";
+
 const data = [
   {
     name: "Total",
@@ -32,7 +30,7 @@ const CountChart = () => {
       <div className="flex flex-row justify-between">
         <h1 className="capitalize font-semibold">students</h1>
         <Image
-          src="/moreDark.png"
+          src={getImagePath("/moreDark.png")}
           alt="menu options"
           width={20}
           height={20}
@@ -50,13 +48,14 @@ const CountChart = () => {
             barSize={32}
             data={data}
           >
-            <RadialBar
-              background
-              dataKey="count"
-            />
+            <RadialBar background dataKey="count" />
           </RadialBarChart>
         </ResponsiveContainer>
-        <Image src="/maleFemale.png" alt="maleFemale" width={50} height={50}
+        <Image
+          src={getImagePath("/maleFemale.png")}
+          alt="maleFemale"
+          width={50}
+          height={50}
           className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
         />
       </div>
