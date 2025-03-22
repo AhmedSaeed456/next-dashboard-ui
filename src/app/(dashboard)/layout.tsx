@@ -31,7 +31,7 @@ export default function DashboardLayout({
             className="object-contain"
           />
           <span className="hidden lg:block text-xl font-semibold">
-            SchoolKisho
+            SchoolKishk
           </span>
         </Link>
         <div className="flex-1 overflow-hidden">
