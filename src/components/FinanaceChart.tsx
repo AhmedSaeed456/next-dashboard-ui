@@ -1,5 +1,6 @@
 "use client";
 
+import { getImagePath } from "@/lib/utils";
 import Image from "next/image";
 import React from 'react';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
@@ -73,7 +74,7 @@ const FinanaceChart = () => {
         <div className="flex flex-row justify-between">
         <h1 className="capitalize font-semibold">Finanace</h1>
         <Image
-          src="/moreDark.png"
+          src={getImagePath("/moreDark.png")}
           alt="menu options"
           width={20}
           height={20}

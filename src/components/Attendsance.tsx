@@ -1,5 +1,6 @@
 "use client";
 
+import { getImagePath } from "@/lib/utils";
 import Image from "next/image";
 import React from 'react';
 import { BarChart, Bar, Rectangle, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
@@ -39,7 +40,7 @@ const Attendsance = () => {
       <div className="flex flex-row justify-between">
         <h1 className="capitalize font-semibold">attendance</h1>
         <Image
-          src="/moreDark.png"
+          src={getImagePath("/moreDark.png")}
           alt="menu options"
           width={20}
           height={20}

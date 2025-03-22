@@ -1,4 +1,5 @@
 import { events } from "@/constants/events";
+import { getImagePath } from "@/lib/utils";
 import Image from "next/image";
 
 
@@ -8,7 +9,7 @@ const Announcements = () => {
       <div className="flex flex-row justify-between">
         <h1 className="capitalize font-semibold">Announcements</h1>
         <Image
-            src="/moreDark.png"
+            src={getImagePath("/moreDark.png")}
             alt="menu options"
             width={20}
             height={20}

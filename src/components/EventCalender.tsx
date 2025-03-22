@@ -4,6 +4,7 @@ import { useState } from "react";
 import Image from "next/image";
 import Calendar from "react-calendar";
 import "react-calendar/dist/Calendar.css";
+import { getImagePath } from "@/lib/utils";
 
 type ValuePiece = Date | null;
 
@@ -41,7 +42,7 @@ const EventCalender = () => {
         <div className="flex flex-row justify-between">
           <h1 className="capitalize font-semibold">Event</h1>
           <Image
-            src="/moreDark.png"
+            src={getImagePath("/moreDark.png")}
             alt="menu options"
             width={20}
             height={20}
