@@ -52,7 +52,7 @@ const EventCalender = () => {
         {events.map(item => (
           <div
             key={item.id}
-            className={`shadow-md p-5 border-2 border-gray-100 border-top-4 odd:border-t-lamaSky even:border-t-lamaPurple  rounded-md mb-3 w-full`}
+            className={`shadow-md p-5 border-2 border-gray-100 border-t-4 odd:border-t-lamaSky even:border-t-lamaPurple  rounded-md mb-3 w-full`}
           >
             <div className="flex flex-row justify-between items-center">
               <h1>{item.title}</h1>
